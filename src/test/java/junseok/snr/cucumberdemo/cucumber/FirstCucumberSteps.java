@@ -1,4 +1,4 @@
-package junseok.snr.cucumberdemo;
+package junseok.snr.cucumberdemo.cucumber;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
