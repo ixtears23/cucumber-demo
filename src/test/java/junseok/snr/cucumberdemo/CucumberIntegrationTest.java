@@ -9,6 +9,6 @@ import static io.cucumber.junit.platform.engine.Constants.PLUGIN_PROPERTY_NAME;
 @Suite
 @SelectClasspathResource("junseok/snr/features")
 @ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty")
-@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "junseok.snr.cucumberdemo.cucumber")
+@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "junseok.snr.cucumberdemo")
 public class CucumberIntegrationTest {
 }
