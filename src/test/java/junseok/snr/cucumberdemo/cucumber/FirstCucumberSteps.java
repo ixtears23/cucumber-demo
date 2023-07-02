@@ -7,21 +7,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.HashMap;
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class FirstCucumberSteps {
-//    @Autowired
-//    private RestTemplate restTemplate;
-//    @Autowired
-//    private ApplicationContext applicationContext;
+    @Autowired
+    private RestTemplate restTemplate;
+    @Autowired
+    private ApplicationContext applicationContext;
 
     @Given("준비가 되어야 해.")
     public void abc() {
-        assertThat(new HashMap<>()).isNull();
-//        assertThat(restTemplate).isNotNull();
-//        assertThat(applicationContext).isNotNull();
+        assertThat(restTemplate).isNotNull();
+        assertThat(applicationContext).isNotNull();
         System.out.println(">>>>> GIVEN!!!!");
     }
 
